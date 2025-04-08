@@ -2,15 +2,15 @@
 
 Tipizza tutte le variabili, funzioni e strutture dati in modo esplicito, e verifica che il comportamento finale sia identico alla versione in JavaScript. */
 
-interface Recipe {
+type Recipe = {
   userId: number;
-}
+};
 
-interface Chef {
+type Chef = {
   id: number;
   firstName: string;
   birthDate: string;
-}
+};
 
 async function getChefBirthday(id: number): Promise<object | null> {
   try {
